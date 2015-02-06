@@ -2,20 +2,4 @@
 
 Made with my mentor at [Bloc](http://bloc.io)
 
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
+[brigid-bloccit](https://brigid-bloccit.herokuapp.com/) deployed to Heroku
