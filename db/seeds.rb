@@ -39,6 +39,21 @@ require 'faker'
    )
  end
  posts = Post.all
+
+ # Create Summaries
+ 50.times do
+  Summary.create!(
+    description:  Faker::Lorem.paragraph
+    )
+end
+summaries = Summary.all
+
+# create_table "summaries", force: :cascade do |t|
+#    t.text     "description"
+#    t.datetime "created_at",  null: false
+#    t.datetime "updated_at",  null: false
+#    t.integer  "post_id"
+#  end
  
  # Create Comments
  100.times do
