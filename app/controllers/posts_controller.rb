@@ -2,7 +2,7 @@ class PostsController < ApplicationController
 
   def show
     @post = Post.find(params[:id])
-    @topic = Topic.find(params[:topic_id])
+      @topic = Topic.find(params[:topic_id])
   end
 
   def new
@@ -43,8 +43,7 @@ class PostsController < ApplicationController
      end
    end
 
-   private
-
+  private
   def post_params
     params.require(:post).permit(:title, :body)
   end
