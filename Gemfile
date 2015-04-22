@@ -26,6 +26,9 @@ gem 'devise'
 gem 'pundit'
 gem 'figaro', '1.0'
 gem 'redcarpet'
+gem 'carrierwave'
+gem 'mini_magick'
+gem 'fog'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
