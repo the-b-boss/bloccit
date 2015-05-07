@@ -40,5 +40,10 @@ group :development, :test do
 
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'
+
+  # When dealing with a particularly complex bug, logging and raising errors can become tedious or imprecise. The better_errors gem is there to help.
+  gem 'binding_of_caller'
+  gem 'better_errors'
+  
 end
 
