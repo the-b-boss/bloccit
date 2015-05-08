@@ -6,7 +6,8 @@ class CommentsController < ApplicationController
       
     @comment = current_user.comments.build(comment_params)
     authorize @comment
-    
+
+    @comment.post_id = @post.id
      
      if @comment.save
        flash[:notice] = "Comment was saved."

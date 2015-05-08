@@ -10,7 +10,7 @@
      
     <p><%= markdown_to_html @post.body %></p>
     <h2>Comments:</h2>
-    <%= render "comments/comment", collection: @comments %>
+    <%= render "comments/comment", locals: { topic: @topic, post: @post, user: @user } %>
     <%= render "comments/form", locals: { topic: @topic, post: @post, user: @user } %>
   </div>
   

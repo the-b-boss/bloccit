@@ -1,9 +1,9 @@
 <%= form_for [@topic, @post, @post.comments.new] do |f| %>
 
-   <%= form_group_tag([:body]) do %>
+   <div class="form_group">
      <%= f.label :body %>
      <%= f.text_area :body, rows: 8, class: 'form-control', placeholder: "Add your comment:" %>
-   <% end %>
+
    
    <div class="form-group">
      <%= f.submit "Create comment", class: 'btn btn-success' %>
