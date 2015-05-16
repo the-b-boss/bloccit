@@ -44,6 +44,8 @@ group :development, :test do
   # When dealing with a particularly complex bug, logging and raising errors can become tedious or imprecise. The better_errors gem is there to help.
   gem 'binding_of_caller'
   gem 'better_errors'
-  
+
+  # Rspec is used for behaviour driven development
+  gem 'rspec-rails', '~> 3.0'
 end
 
