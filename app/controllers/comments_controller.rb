@@ -21,10 +21,11 @@ class CommentsController < ApplicationController
   end
 
   def destroy
-#     @topic = Topic.find(params[:topic_id])
-     @post =  Post.find(params[:id])
-     @comment.post_id = @post.id
-     @comment = @post.comment.find(params[:id])
+     @topic = Topic.find(params[:topic_id])
+     @post =  @topic.posts.find(params[:post_id])
+      @comment.post_id = Post.find(params[:id])
+     @comment = @post.comments.find(params[:id])
+
 
      @topic = @post.topic_id
  
