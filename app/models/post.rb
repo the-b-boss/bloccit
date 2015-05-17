@@ -37,7 +37,7 @@ class Post < ActiveRecord::Base
   private
 
   def create_vote
-    user.votes.create
+    user.votes.create(value: 1, post: self)
   end
   
 end
