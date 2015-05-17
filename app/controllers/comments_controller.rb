@@ -5,6 +5,7 @@ class CommentsController < ApplicationController
 #    @topic = Topic.find(params[:topic_id])
     @post = Post.find(params[:post_id])
     @topic = @post.topic_id
+
     @comment = current_user.comments.build(comment_params)
 
     authorize @comment
@@ -27,6 +28,9 @@ class CommentsController < ApplicationController
      @post = Post.find(params[:post_id])
      @topic = @post.topic_id
      @comment = @post.comments.find(params[:id])
+
+
+     @topic = @post.topic_id
  
      authorize @comment
 
