@@ -13,7 +13,7 @@ describe User do
       sign_in @user
     end
 
-    xit "returns 'nil' if the user has not favorited the post" do 
+    it "returns 'nil' if the user has not favorited the post" do 
       expect( @user.favorites.find_by_post_id(@post.id) ).to be_nil
     end
 
