@@ -13,7 +13,9 @@
     <p><%= markdown_to_html @post.body %></p>
     <h2>Comments:</h2>
     <% @post.comments.each do |comment| %>
-      <%= render "comments/comment", locals: { topic: @topic, post: @post, user: @user } %>
+      <%= render partial: 'comments/comment', collection: @comments 
+      # locals: { topic: @topic, post: @post, user: @user } 
+      %>
     <% end %>
 
     <% if policy(@post.comments).new? %>
