@@ -50,5 +50,9 @@ group :development, :test do
   # Rspec is used for behaviour driven development
   gem 'rspec-rails', '~> 3.0'
   gem 'capybara'
+
+  # Making object creation for tests easier
+  gem 'factory_girl_rails', '~> 4.0'
+  
 end
 
