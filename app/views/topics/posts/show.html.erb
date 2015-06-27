@@ -11,12 +11,10 @@
     <%= image_tag(@post.image.url) if @post.image? %>
      
     <p><%= markdown_to_html @post.body %></p>
+    
     <h2>Comments:</h2>
-    <% @post.comments.each do |comment| %>
-      <%= render partial: 'comments/comment', collection: @comments 
-      # locals: { topic: @topic, post: @post, user: @user } 
-      %>
-    <% end %>
+    <%= render partial: 'comments/comment', collection: @comments %>
+
 
     <% if policy(@post.comments).new? %>
       <%= render "comments/form", locals: { topic: @topic, post: @post, user: @user } %>
